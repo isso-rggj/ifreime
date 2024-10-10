@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de Vídeos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Publicar e Assistir Vídeos</h1>
+        <nav>
+            <a href="index.html">Publicar Vídeo</a>
+            <a href="videos.html">Assistir Vídeos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="upload-section">
+            <h2>Publique seu vídeo</h2>
+            <input type="file" id="video-input" accept="video/*">
+            <button id="upload-btn">Publicar</button>
+        </section>
+
+        <section id="preview-section" style="display:none;">
+            <h2>Pré-visualização</h2>
+            <video id="video-preview" controls></video>
+            <button id="save-btn">Salvar Vídeo</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
